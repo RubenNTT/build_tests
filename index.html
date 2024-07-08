@@ -145,7 +145,7 @@
     <script>
 		if(!isMobile.any){
 			document.querySelector("#desktop-view").style.display = "block";
-			return;
+			throw '';
 		}
 
 		window.addEventListener("load", function () {
@@ -163,11 +163,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/33b7588f53576698c7843ded83151baf.loader.js";
+        const loaderUrl = buildUrl + "/b81caf3578fce9e5c84f1c2b493c5c81.loader.js";
         const config = {
-            dataUrl: buildUrl + "/e99bc1e25d4fa5fbb8939d29be09351d.data",
-            frameworkUrl: buildUrl + "/c6c4475ead833d4e3fcdb69c2dc09b71.framework.js",
-            codeUrl: buildUrl + "/f3cff4b5deb29ba9f060d15db0ac294c.wasm",
+            dataUrl: buildUrl + "/8930e2ed98e44ea2732c3ac69a7b6a75.data",
+            frameworkUrl: buildUrl + "/ec2e2519a360384169e6bc2c39a68f64.framework.js",
+            codeUrl: buildUrl + "/c1c90f70a365655120387570b0f5c056.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "ZapparTestURP",
