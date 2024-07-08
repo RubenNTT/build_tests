@@ -2,7 +2,7 @@ const cacheName = "DefaultCompany-ZapparTestURP-0.1.0";
 const contentToCache = [
     "Build/33b7588f53576698c7843ded83151baf.loader.js",
     "Build/c6c4475ead833d4e3fcdb69c2dc09b71.framework.js",
-    "Build/7169a3007db1675c2e0ad667efc3df7b.data",
+    "Build/e99bc1e25d4fa5fbb8939d29be09351d.data",
     "Build/f3cff4b5deb29ba9f060d15db0ac294c.wasm",
     "TemplateData/style.css"
 
@@ -25,9 +25,9 @@ self.addEventListener('fetch', function (e) {
       if (response) { return response; }
 
       response = await fetch(e.request);
-      const cache = await caches.open(cacheName);
-      console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
-      cache.put(e.request, response.clone());
+//      const cache = await caches.open(cacheName);
+//      console.log(`[Service Worker] Caching new resource: ${e.request.url}`);
+//      cache.put(e.request, response.clone());
       return response;
     })());
 });
