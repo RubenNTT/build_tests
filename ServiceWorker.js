@@ -1,9 +1,9 @@
-const cacheName = "DefaultCompany-ZapparTestURP-0.1.0";
+const cacheName = "CUPRA-CUPRA America's Cup-0.1";
 const contentToCache = [
-    "Build/aca17784a298616c111c1b891787f0af.loader.js",
-    "Build/ec2e2519a360384169e6bc2c39a68f64.framework.js",
-    "Build/5c7a0e3ec7d087c58a60f8061a4f468e.data",
-    "Build/01f77212f89ad97891e569c08c7a01ec.wasm",
+    "Build/app.loader.js",
+    "Build/84eddc47d97b3be4e580c9e37dd493ef.js",
+    "Build/c6e5b6890025bd88c87f6129622ae020.data",
+    "Build/3154f26f427b9ccc9558f6ee08b3145a.wasm",
     "TemplateData/style.css"
 
 ];
