@@ -60,8 +60,8 @@
         </div>
         <canvas id="video-canvas"></canvas>
     </div>
-    <script src="arcamera.js" type="text/javascript"></script>
-    <script src="wtracker.js" type="text/javascript"></script>
+    <script src="js/arcamera.js" type="text/javascript"></script>
+    <script src="js/wtracker.js" type="text/javascript"></script>
     <script src="Build/app.loader.js"></script>
     <script>
         var initialize = async() =>{
@@ -70,7 +70,7 @@
             window.arCamera = new ARCamera(unityCanvas, videoCanvas);
             window.wTracker = new WorldTracker(arCamera);
             try{
-                await wTracker.initialize("./opencv.js");
+                await wTracker.initialize("./js/opencv.js");
                 console.log("World tracker initialized!");   
             }
             catch (error) {
@@ -96,7 +96,7 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/b9c1a3ec70b0c66411c67e472ed721d6.data",
+                    dataUrl: "Build/1d2d210621d1e7c0f64adf2cde8e14d8.data",
                     frameworkUrl: "Build/d120234470eb110e0ae864c7b6c1404e.js",
                     codeUrl: "Build/56710ae845dd4c29490c71a6a1a077d5.wasm",
                     streamingAssetsUrl: "StreamingAssets",
