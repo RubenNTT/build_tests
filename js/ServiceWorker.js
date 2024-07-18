@@ -1,9 +1,9 @@
 const cacheName = "CUPRA-CUPRA America's Cup-0.1";
 const contentToCache = [
     "Build/app.loader.js",
-    "Build/9678be28932eff7674a8a93800b8e1c0.js",
-    "Build/3b2143feffd46255dd30797cb9f294c2.data",
-    "Build/17f79030dbe7ae04238be70cea16465c.wasm",
+    "Build/42421de6b127720c83d8cb5566eb6074.js",
+    "Build/25cad4f05ed029a88691f92567bbb452.data",
+    "Build/c17c0e1ac8806dbaab4e5add2c1c19ff.wasm",
     "TemplateData/style.css"
 
 ];
