@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Simple</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Elige una Versión</h1>
+    <a href="ar/index.html" class="button">
+        Versión AR
+        <img src="arQR.png" alt="AR QR Code" class="qr-code">
+    </a>
+    <a href="3d/index.html" class="button">
+        Versión 3D
+        <img src="3dQR.png" alt="3D QR Code" class="qr-code">
+    </a>
+</body>
+</html>

@@ -143,10 +143,10 @@
 	<script type="text/javascript" src="js/NoSleep.min.js"></script>
 	<script type="text/javascript" src="js/isMobile.min.js"></script>
     <script>
-		if(!isMobile.any){
-			document.querySelector("#desktop-view").style.display = "block";
-			throw '';
-		}
+		// if(!isMobile.any){
+		// 	document.querySelector("#desktop-view").style.display = "block";
+		// 	throw '';
+		// }
 
 		window.addEventListener("load", function () {
 			if ("serviceWorker" in navigator) {
@@ -165,7 +165,7 @@
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/app.loader.js";
         const config = {
-            dataUrl: buildUrl + "/84a700c095c15751e2cfc316017480bb.data",
+            dataUrl: buildUrl + "/de0b1cc1bf252a37a83a508e540b2460.data",
             frameworkUrl: buildUrl + "/8fb3b7741c79fa6a12fa91b7e08d8ae9.js",
             codeUrl: buildUrl + "/9bdca7ca0dcee232229e4e9b094f7267.wasm",
             streamingAssetsUrl: "StreamingAssets",

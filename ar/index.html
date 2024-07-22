@@ -65,12 +65,8 @@
         <p id="errorText" style="text-align: center; width:60vw; color:white"></p>
     </div>
     <div id="unity-container" class="unity-mobile">
-        background
-        logos
-        texto abajo
         <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #0000; z-index: -99;"></canvas>
         <div id="unity-loading-bar">
-            Texto del %
             <div id="unity-progress-bar-empty">
                 <div id="unity-progress-bar-full"></div>
             </div>
@@ -136,7 +132,7 @@
             
             document.getElementById('startARDiv').style.display = 'none';
             createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/61537282430b1f514b7591be7de832f5.data",
+                    dataUrl: "Build/c12272a4ce58f1f91835cdbf353a3705.data",
                     frameworkUrl: "Build/8fb3b7741c79fa6a12fa91b7e08d8ae9.js",
                     codeUrl: "Build/9bdca7ca0dcee232229e4e9b094f7267.wasm",
                     streamingAssetsUrl: "StreamingAssets",
@@ -149,7 +145,6 @@
                     },
                     (progress) => {
                         progressBarFull.style.width = 100 * progress + "%";
-                        
                     }
                 ).then((unityInstance) => {
                 window.unityInstance = unityInstance;
