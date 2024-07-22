@@ -126,6 +126,9 @@
 </head>
 
 <body class="dark">
+    <div id="desktop-view">
+        Desktop version.
+    </div>
 	<div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
     </div>
@@ -140,6 +143,11 @@
 	<script type="text/javascript" src="js/NoSleep.min.js"></script>
 	<script type="text/javascript" src="js/isMobile.min.js"></script>
     <script>
+		if(!isMobile.any){
+			document.querySelector("#desktop-view").style.display = "block";
+			throw '';
+		}
+
 		window.addEventListener("load", function () {
 			if ("serviceWorker" in navigator) {
 				navigator.serviceWorker.register("ServiceWorker.js");
@@ -157,9 +165,9 @@
         const buildUrl = "Build";
         const loaderUrl = buildUrl + "/app.loader.js";
         const config = {
-            dataUrl: buildUrl + "/274582dc319ed085b9a9bba2941b9a85.data",
-            frameworkUrl: buildUrl + "/d34c900f622537303866cad825ff178e.js",
-            codeUrl: buildUrl + "/69f7bb516287e8a548b7ddfdc1614575.wasm",
+            dataUrl: buildUrl + "/84a700c095c15751e2cfc316017480bb.data",
+            frameworkUrl: buildUrl + "/8fb3b7741c79fa6a12fa91b7e08d8ae9.js",
+            codeUrl: buildUrl + "/9bdca7ca0dcee232229e4e9b094f7267.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "CUPRA",
             productName: "CUPRA America's Cup",
