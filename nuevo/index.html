@@ -6,7 +6,6 @@
     <title>Unity WebGL Player | CUPRA America's Cup</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-	<link rel="manifest" href="manifest.webmanifest">
     <style>
         html{
             height: -webkit-fill-available;
@@ -84,11 +83,7 @@
 			document.querySelector("#desktop-view").style.display = "block";
 			throw '';
 		}
-		window.addEventListener("load", function () {
-			if ("serviceWorker" in navigator) {
-				navigator.serviceWorker.register("js/ServiceWorker.js");
-			}
-		});
+
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 		
 		// Enable no sleep.
