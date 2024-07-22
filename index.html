@@ -89,7 +89,7 @@
 		}
 		window.addEventListener("load", function () {
 			if ("serviceWorker" in navigator) {
-				navigator.serviceWorker.register("js/ServiceWorker.js");
+				navigator.serviceWorker.register("ServiceWorker.js");
 			}
 		});
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
