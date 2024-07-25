@@ -8,7 +8,7 @@
     "description": "",
     "icons": [{
       "src": "TemplateData/unity-logo-dark.png",
-      "sizes": "154x130",
+      "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     }]
